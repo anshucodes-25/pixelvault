@@ -1,0 +1,160 @@
+.Image-grid {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 0 80px;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.image-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+/* Dark overlay */
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  transition: background 0.6s ease;
+  pointer-events: none;
+}
+
+/* Top Buttons */
+.like-download-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+}
+
+/* User */
+.first-letter {
+  font-size: 18px;
+  color: white;
+  background: rgb(128, 7, 128);
+  padding: 5px 8px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.name {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+}
+
+.whole-name {
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Bottom Right */
+.bottom-right {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+}
+
+.likes,
+.views {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Hover Effect */
+.image-card:hover img {
+  opacity: 0.6;
+}
+
+.image-card:hover::after {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.image-card:hover .like-download-button,
+.image-card:hover .name,
+.image-card:hover .bottom-right {
+  opacity: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .Image-grid {
+    column-count: 3;
+    padding: 0 50px;
+  }
+
+  .image-card {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Image-grid {
+    column-count: 2;
+    padding: 0 20px;
+  }
+
+  .image-card {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Image-grid {
+    column-count: 1;
+    padding: 0 15px;
+  }
+
+  .image-card {
+    max-width: 100%;
+  }
+}

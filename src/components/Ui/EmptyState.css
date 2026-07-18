@@ -1,0 +1,31 @@
+.empty-state {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15px;
+}
+
+.empty-state h2 {
+  margin: 0;
+}
+
+.empty-state p {
+  color: #ccc;
+}
+
+.empty-state button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff385c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.empty-state button:hover {
+  background-color: #e31c5f;
+}

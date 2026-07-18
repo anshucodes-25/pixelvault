@@ -1,0 +1,166 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  background: #0f0f0f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.logo span {
+  font-size: 1.4em;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  flex: 1;
+  min-width: 180px;
+  max-width: 550px;
+
+  padding: 10px 12px;
+
+  background: #424242;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 6px;
+}
+
+.input-box input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.favorite-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   position: relative;
+
+  gap: 6px;
+
+  padding: 10px 14px;
+
+  background: #ec4899;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+
+.heart-icon {
+  display: flex;
+  align-items: center;
+}
+
+.favorite-button span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  /* First row */
+  .logo {
+    order: 1;
+    font-size: 18px;
+  }
+
+  .logo span {
+    font-size: 1.2em;
+  }
+
+  .favorite-button {
+    order: 2;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* Second row */
+  .input-box {
+    order: 3;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .input-box input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+}
+
+/* Very small phones */
+@media (max-width: 320px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .favorite-button {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .input-box input {
+    font-size: 13px;
+  }
+}

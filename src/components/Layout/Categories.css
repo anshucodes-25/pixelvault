@@ -1,0 +1,53 @@
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+  background: #0f0f0f;
+
+  overflow-x: auto;
+  white-space: nowrap;
+
+  scroll-behavior: smooth;
+}
+
+.categories button {
+  flex: 0 0 auto;   /* prevents shrinking */
+
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #2a2a2a;
+  color: #ffffff;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .categories button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .categories button {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+}
