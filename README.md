@@ -1,18 +1,37 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 PixaVault
 
-Currently, two official plugins are available:
+PixaVault is a responsive image discovery application that allows users to explore and download images with a smooth and modern browsing experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Features
+♾️ **Infinite Scroll**
+  Automatically loads more images as users continue scrolling.
 
-## React Compiler
+ 💾 **Local Storage**
+  Saves data locally to provide a better user experience.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+ 📱 **Responsive Design**
+  Fully responsive layout that works across mobile, tablet, and desktop devices.
 
-Note: This will impact Vite dev & build performances.
+ 🖼️ **Image Download**
+  Users can download images directly from the application.
 
-## Expanding the ESLint configuration
+ ⚡ **Modern UI Experience**
+  Built with a clean and user-friendly interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* React.js
+* Vite
+* JavaScript
+
+Through building PixaVault, I practiced:
+
+* React component development
+* API data handling
+* Infinite scroll implementation
+* Local storage management
+* Responsive web design
+* Modern frontend development workflow
